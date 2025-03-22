@@ -98,9 +98,5 @@ video_url = st.sidebar.text_input("Introduce la URL del video:")
 if video_url:
     st.video(video_url)
 
-# Sección para agregar imagen subida por el usuario
-st.sidebar.subheader("Sube una imagen")
-imagen_subida = st.sidebar.file_uploader("Sube una imagen", type=["jpg", "png", "jpeg"])
-if imagen_subida is not None:
-    st.image(imagen_subida, caption="Imagen subida", use_column_width=True)
+
 
