@@ -12,7 +12,7 @@ st.set_page_config(
 )
 
 # 📷 Mostrar imagen principal
-st.image("imagen.jpg", caption="Análisis de Texto", use_column_width=True)
+st.image("123.jpg", caption="Análisis de Texto", use_column_width=True)
 
 # Estilos personalizados
 st.markdown(
