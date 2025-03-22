@@ -4,25 +4,12 @@ from textblob import TextBlob
 import re
 from googletrans import Translator
 
-# Mostrar imagen 
-st.image("123.jpg", caption="Analizador de Texto",use_container_width =True)
-
- 🚀 **Mover esta línea al inicio**
+# Configuración de la página
 st.set_page_config(
     page_title="Analizador de Texto Simple",
     page_icon="📊",
     layout="wide"
 )
-
-
-# Título y descripción
-st.title("📝 Analizador de Texto con TextBlob")
-st.markdown("""
-Esta aplicación utiliza TextBlob para realizar un análisis básico de texto:
-- Análisis de sentimiento y subjetividad
-- Extracción de palabras clave
-- Análisis de frecuencia de palabras
-""")
 
 # Estilos personalizados
 st.markdown(
@@ -102,5 +89,9 @@ if texto:
     resultados = procesar_texto(texto)
     crear_visualizaciones(resultados)
 
-
+# Sección para agregar video
+st.sidebar.subheader("Agrega un video")
+video_url = st.sidebar.text_input("Introduce la URL del video:")
+if video_url:
+    st.video(video_url)
 
