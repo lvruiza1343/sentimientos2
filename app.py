@@ -7,12 +7,22 @@ from googletrans import Translator
 # Mostrar imagen 
 st.image("123.jpg", caption="Analizador de Texto",use_container_width =True)
 
-# Configuración de la página
+ 🚀 **Mover esta línea al inicio**
 st.set_page_config(
     page_title="Analizador de Texto Simple",
     page_icon="📊",
     layout="wide"
 )
+
+
+# Título y descripción
+st.title("📝 Analizador de Texto con TextBlob")
+st.markdown("""
+Esta aplicación utiliza TextBlob para realizar un análisis básico de texto:
+- Análisis de sentimiento y subjetividad
+- Extracción de palabras clave
+- Análisis de frecuencia de palabras
+""")
 
 # Estilos personalizados
 st.markdown(
