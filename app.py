@@ -11,6 +11,9 @@ st.set_page_config(
     layout="wide"
 )
 
+# 📷 Mostrar imagen principal
+st.image("imagen.jpg", caption="Análisis de Texto", use_column_width=True)
+
 # Estilos personalizados
 st.markdown(
     """
@@ -94,4 +97,10 @@ st.sidebar.subheader("Agrega un video")
 video_url = st.sidebar.text_input("Introduce la URL del video:")
 if video_url:
     st.video(video_url)
+
+# Sección para agregar imagen subida por el usuario
+st.sidebar.subheader("Sube una imagen")
+imagen_subida = st.sidebar.file_uploader("Sube una imagen", type=["jpg", "png", "jpeg"])
+if imagen_subida is not None:
+    st.image(imagen_subida, caption="Imagen subida", use_column_width=True)
 
