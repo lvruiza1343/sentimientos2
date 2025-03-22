@@ -5,7 +5,7 @@ import re
 from googletrans import Translator
 
 # Mostrar imagen 
-st.image("123.jpg", caption="Analizador de Texto", use_column_width=True)
+st.image("123.jpg", caption="Analizador de Texto",use_container_width =True)
 
 # Configuración de la página
 st.set_page_config(
