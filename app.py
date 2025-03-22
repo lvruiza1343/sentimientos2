@@ -93,7 +93,7 @@ if texto:
     crear_visualizaciones(resultados)
 
 # Sección para agregar video
-st.sidebar.subheader("Agrega un video de tu prefencia(escucha musica desde estaa web)")
+st.sidebar.subheader("Agrega un video de tu prefencia(escucha musica desde esta web)")
 video_url = st.sidebar.text_input("Introduce la URL del video:")
 if video_url:
     st.video(video_url)
